@@ -20,8 +20,8 @@ import { PaymentDetailService } from './shared/payment-detail.service';
     HttpClientModule,
     FormsModule,
     RouterModule.forRoot([
-      //{ path: '', pathMatch: 'full' }
-    ])
+//{ path: '', pathMatch: 'full' }
+], { relativeLinkResolution: 'legacy' })
   ],
   providers: [PaymentDetailService],
   bootstrap: [AppComponent]
